@@ -53,27 +53,7 @@ The implementation demonstrates that:
 2. The λ parameter allows for fine-tuning the algorithm's performance
 3. The approach maintains the computational efficiency of the original Slope One family
 
-## Usage
 
-```python
-# Example usage
-import pandas as pd
-from personalized_slope_one import PersonalizedWeightedSlopeOne
-
-# Load your rating data
-# Format: user_id, item_id, rating
-ratings_df = pd.read_csv('your_ratings_data.csv')
-
-# Initialize the recommender
-recommender = PersonalizedWeightedSlopeOne(lambda_param=0.5)
-
-# Train the model
-recommender.fit(ratings_df)
-
-# Make predictions for a specific user
-user_id = 42
-predictions = recommender.predict(user_id)
-```
 
 ## Requirements
 - Python 3.6+
